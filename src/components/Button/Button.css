@@ -1,0 +1,36 @@
+.Default-button {
+  border: none;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 4px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Default-button:active {
+  background-color: #d0d0d0 !important;
+}
+
+.Extra-rounded-button {
+  border-radius: 50px;
+}
+
+.Rounded-button {
+  border-radius: 10px;
+}
+
+.Round-button {
+  border-radius: 100px;
+}
+
