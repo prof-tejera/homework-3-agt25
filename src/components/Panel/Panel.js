@@ -9,7 +9,6 @@ class Panel extends Component {
         width: width, 
         background: backgroundColor
       }
-
       return (<div style={style} className="panel-container">{this.props.children}</div>);
     }
 }

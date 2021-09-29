@@ -1,22 +1,45 @@
-import { Component } from 'react';
+import {Component} from 'react';
 import './Button.css';
 
 class Button extends Component {
-  render() {
-    const { type, color, background, height, width, fontSize, text } = this.props; 
-    const style = {
-      color: color, 
-      background: background,
-      height: height,
-      width: width, 
-      fontSize: fontSize
+
+    render() {
+        const {
+            key,
+            selected,
+            type,
+            color,
+            background,
+            height,
+            width,
+            fontSize,
+            text
+        } = this.props;
+
+        const style = {
+            color: color,
+            background: background,
+            height: height,
+            width: width,
+            fontSize: fontSize,
+            selected: selected,
+        }
+
+        return (
+
+            <button
+                key={key}
+                onClick={(e) => {
+                    this.props.onClick(e);
+
+                }}
+          
+                style={style}
+                className={`Default-button ${selected} ${type}`}>
+                  {text}</button>
+        )
+
     }
-    
-    return (
-    
-    <button style={style} className={`Default-button ${type}`}>{text}</button>
-    )
-  }
 }
 
 export default Button;

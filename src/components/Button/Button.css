@@ -16,12 +16,20 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  width: auto;
 }
 
 .Default-button:active {
-  background-color: #d0d0d0 !important;
+  background-color: orange !important;
 }
 
+a:active {
+  color: blue;
+}
+
+.selected {
+  border: 2px solid rgb(0, 0, 255);
+}
 .Extra-rounded-button {
   border-radius: 50px;
 }
