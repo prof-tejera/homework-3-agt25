@@ -9,7 +9,12 @@ class Input extends Component {
                 className="default-input"
                 placeholder={placeholder}
                 type={type}
-                autoComplete="off"/>
+                autoComplete="off"
+                onChange={(e) => {
+                  this.props.onChange(e.target.value);
+
+              }}
+                />
         );
     }
 }

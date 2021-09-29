@@ -6,7 +6,7 @@ import './MediaButtons.css';
 class MediaButtons extends Component {
 
   handleClick = (e) => {
-    console.log(`The ${e.target.innerHTML} has been clicked`);
+    console.log(`${e.target.innerHTML} has been clicked`);
   }
 
   render() {

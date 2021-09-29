@@ -6,10 +6,9 @@ import Button from 'components/Button/Button';
 
 class LoginForm extends Component {
 
-  handleClick = (e) => {
-      
-    console.log('Submit event!');
-
+  
+  handleChange = (e) => {
+    console.log(e);
   }
     render() {
         return (
@@ -17,9 +16,9 @@ class LoginForm extends Component {
                 <Panel width="60%" height="100%">
                   
                     <form>
-                        <Input type="username" placeholder="Username"></Input>
+                        <Input onChange={this.handleChange} type="username" placeholder="Username"></Input>
                         <div>
-                            <Input type="password" placeholder="Password"></Input>
+                            <Input onChange={this.handleChange} type="password" placeholder="Password"></Input>
                         </div>
                     </form>
 
