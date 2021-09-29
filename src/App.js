@@ -28,7 +28,7 @@ class App extends Component {
         <div className="App-component">
           <header className="App-header">Pager component</header>
           <div className="App-content">
-            <Pager pages={5}/>
+            <Pager pages={11}/>
           </div>
         </div>
 

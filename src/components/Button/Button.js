@@ -13,7 +13,8 @@ class Button extends Component {
             height,
             width,
             fontSize,
-            text
+            text,
+            disabled,
         } = this.props;
 
         const style = {
@@ -33,7 +34,7 @@ class Button extends Component {
                     this.props.onClick(e);
 
                 }}
-          
+                disabled={disabled}
                 style={style}
                 className={`Default-button ${selected} ${type}`}>
                   {text}</button>

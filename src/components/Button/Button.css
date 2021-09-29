@@ -23,12 +23,9 @@
   background-color: orange !important;
 }
 
-a:active {
-  color: blue;
-}
 
 .selected {
-  border: 2px solid rgb(0, 0, 255);
+  border: 2px solid rgb(228, 171, 29);
 }
 .Extra-rounded-button {
   border-radius: 50px;
