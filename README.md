@@ -32,11 +32,21 @@ const SomeComponentThatUsesInput = () => {
   </div>
 }
 ```
-6. **Deploy your app using whatever method you want (e.g. Github Pages, AWS, ect) and insert the url here: URL_TO_PROJECT**
+6. **Deploy your app using whatever method you want (e.g. Github Pages, AWS, ect) and insert the url here: [Homework 3: Generic Components](https://main.d21nn8135ep6f8.amplifyapp.com/)**
 
 ## Bonus
-- Pager: If you have hardcoded a pager that works 1 to 10, then how might we modify it to be a bit more generic? What props can I pass in that will make the component more configurable?
-- Radio buttons: If you hardcoded "Apple", "Pear", and "Orange", then how might you modify it to take in an array of button configurations? What information might we need to determine if a button is active? 
+
+:white_check_mark: Pager: If you have hardcoded a pager that works 1 to 10, then how might we modify it to be a bit more generic? What props can I pass in that will make the component more configurable?
+- My pager component takes in your desired number of pages as a prop. 
+
+:white_check_mark: Radio buttons: If you hardcoded "Apple", "Pear", and "Orange", then how might you modify it to take in an array of button configurations? What information might we need to determine if a button is active? 
+- My radio button component takes in a 2-dimensional array of options. Each nested array's first element is the actual radio option; the second element is true or false —— disabling the option button if true. 
+
+## Some notes
+
+I have used state to keep track of and update some variables, like the current button selection, in my Pager and RadioButtons components. I tried looking up crash courses on state management but I was rather overwhelmed; most of the tutorials were on hooks and functional components. 
+
+So, I modeled my solutions after this [example from StackOverflow] (https://stackoverflow.com/questions/54310548/how-to-highlight-selected-button-in-react/54310960) of using state. Hope it’s alright! I was very eager to keep track of the button selection and couldn’t think of any other method to search for! 
 
 ## How to run the project
 
