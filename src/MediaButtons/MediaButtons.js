@@ -3,6 +3,7 @@ import Panel from 'components/Panel/Panel';
 import Button from 'components/Button/Button';
 import './MediaButtons.css';
 
+
 class MediaButtons extends Component {
 
   handleClick = (e) => {

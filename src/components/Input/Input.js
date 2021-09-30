@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import './Input.css';
 
+
 class Input extends Component {
     render() {
         const { type, placeholder } = this.props; 

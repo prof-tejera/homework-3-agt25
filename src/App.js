@@ -5,6 +5,7 @@ import Pager from 'Pager/Pager';
 import RadioButtons from 'RadioButtons/RadioButtons';
 import './App.css';
 
+
 class App extends Component {
   render() {
     return (
@@ -35,7 +36,13 @@ class App extends Component {
         <div className="App-component">
           <header className="App-header">Radio Buttons component</header>
           <div className="App-content">
-            <RadioButtons options={['Apple', 'Pear', 'Oranges', 'Beets']}/>
+            <RadioButtons options={[
+                ['Apple', false], 
+                ['Pear', false], 
+                ['Oranges', false],
+                ['Beets', true]
+              ]}
+            />
           </div>
         </div>
       </div>

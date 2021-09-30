@@ -4,12 +4,20 @@ import Panel from 'components/Panel/Panel';
 import Input from 'components/Input/Input';
 import Button from 'components/Button/Button';
 
+
 class LoginForm extends Component {
 
+
+  handleClick = (e) => {
+    console.log('You submitted the form')
+  }
+  
   
   handleChange = (e) => {
     console.log(e);
   }
+
+
     render() {
         return (
             <div className="login-form-container">
@@ -38,9 +46,8 @@ class LoginForm extends Component {
                             </span>
                         </p>
                     </div>
-
+                    
                 </Panel>
-
             </div>
         )
     }

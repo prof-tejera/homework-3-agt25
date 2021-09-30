@@ -23,6 +23,10 @@
   background-color: orange !important;
 }
 
+.Default-button:disabled {
+  background-color: rgba(236, 232, 232, 0.315);
+  color: rgb(122, 137, 151);
+}
 
 .selected {
   border: 2px solid rgb(228, 171, 29);

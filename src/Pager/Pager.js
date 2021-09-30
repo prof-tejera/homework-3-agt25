@@ -3,14 +3,15 @@ import './Pager.css';
 import Panel from '../components/Panel/Panel';
 import Button from '../components/Button/Button';
 
+
 class Pager extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
             selectedButton: 1,
-            currentPage: 0,
-            backwardsDisabled: true
+            currentPage: 1,
+            forward: true,
         }
     }
 
@@ -19,6 +20,7 @@ class Pager extends Component {
     }
     pageChange = currentPage => ev => {
         this.setState({currentPage})
+        
     }
 
     render() {
@@ -39,23 +41,29 @@ class Pager extends Component {
                     background="none"
                     onClick={this.buttonSelected(i)}/>
             )
+            
+              
         }
+        
 
         return (
         <div>
             <Panel height="25">
                 <Button
+                    disabled={this.state.currentPage < 0 ? true : false }
                     type="Round-button"
                     text="<"
                     onClick={this.pageChange(this.state.currentPage - 3)}/>
 
+                  {buttons[this.state.currentPage - 1]}
                   {buttons[this.state.currentPage]}
                   {buttons[this.state.currentPage + 1]}
-                  {buttons[this.state.currentPage + 2]}
 
                 <Button
+                      disabled={this.state.currentPage > pages ? true : false }
                       type="Round-button"
-                      text=">" onClick={this.pageChange(this.state.currentPage + 3)}/>
+                      text=">" 
+                      onClick={this.pageChange(this.state.currentPage + 3)}/>
             </Panel>
 
         </div>

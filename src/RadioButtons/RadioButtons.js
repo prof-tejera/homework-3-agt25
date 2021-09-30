@@ -3,6 +3,7 @@ import './RadioButtons.css';
 import Panel from '../components/Panel/Panel';
 import Button from '../components/Button/Button';
 
+
 class RadioButtons extends Component {
 
     constructor(props) {
@@ -18,7 +19,7 @@ class RadioButtons extends Component {
 
     render() {
 
-        const {options} = this.props;
+        const { options } = this.props;
 
         return (
             <div>
@@ -29,7 +30,8 @@ class RadioButtons extends Component {
                               <span key={i}>
                                   <Button key={i} text={item} 
                                           selected={i === this.state.selectedButton ? 'selected': ''}
-                                          onClick={this.buttonSelected(i)}/>
+                                          onClick={this.buttonSelected(i)}
+                                          disabled={item[1]}/>
                               </span>
                           ))
                         }

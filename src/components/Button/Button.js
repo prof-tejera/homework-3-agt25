@@ -1,11 +1,11 @@
 import {Component} from 'react';
 import './Button.css';
 
+
 class Button extends Component {
 
     render() {
         const {
-            key,
             selected,
             type,
             color,
@@ -22,22 +22,20 @@ class Button extends Component {
             background: background,
             height: height,
             width: width,
-            fontSize: fontSize,
-            selected: selected,
+            fontSize: fontSize
         }
 
         return (
 
-            <button
-                key={key}
-                onClick={(e) => {
-                    this.props.onClick(e);
-
-                }}
-                disabled={disabled}
-                style={style}
-                className={`Default-button ${selected} ${type}`}>
-                  {text}</button>
+          <button
+              onClick={(e) => {
+                  this.props.onClick(e);
+              }}
+              disabled={disabled}
+              style={style}
+              className={`Default-button ${selected} ${type}`}>
+                {text}
+          </button>
         )
 
     }
