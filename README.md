@@ -46,7 +46,7 @@ const SomeComponentThatUsesInput = () => {
 
 I have used state to keep track of and update some variables, like the current button selection, in my Pager and RadioButtons components. I tried looking up crash courses on state management but I was rather overwhelmed; most of the tutorials were on hooks and functional components. 
 
-So, I modeled my solutions after this [example from StackOverflow] (https://stackoverflow.com/questions/54310548/how-to-highlight-selected-button-in-react/54310960) of using state. Hope it’s alright! I was very eager to keep track of the button selection and couldn’t think of any other method to search for! 
+So, I modeled my solutions after this [example from StackOverflow](https://stackoverflow.com/questions/54310548/how-to-highlight-selected-button-in-react/54310960) of using state. Hope it’s alright! I was very eager to keep track of the button selection and couldn’t think of any other method to search for! 
 
 ## How to run the project
 
